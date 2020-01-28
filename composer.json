@@ -1,0 +1,19 @@
+{
+    "name": "chenjiahao/seklock",
+    "description": "lock",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chenjiahao",
+            "email": "271375247@qq.com"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "SEKLock\\": "src/"
+        }
+    }    
+}
