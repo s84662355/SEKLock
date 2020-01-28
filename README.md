@@ -1,3 +1,7 @@
+首先要安装 
+https://github.com/s84662355/SEKLock_Server.git
+
+
 laravel的使用方法
 
 composer require chenjiahao/seklock

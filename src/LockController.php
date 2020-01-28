@@ -10,7 +10,7 @@ class LockController{
 
     public function __construct($config)
     { 
-       $this->tcp_client = new  SocketClient($config['ip'], $config['port'], SOL_TCP, 10);
+       $this->tcp_client = new  SocketClient($config['ip'], $config['port'], SOL_TCP,5);
        $this->config = $config;
        $this->tcp_client->connect() ;
        
