@@ -2,6 +2,9 @@
 https://github.com/s84662355/SEKLock_Server.git
 
 
+这个工具是因为我觉用redis加锁的话，太麻烦，性能太差了，所以19年初就萌生了想法，做了这个工具出来
+
+
 laravel的使用方法
 
 composer require chenjiahao/seklock

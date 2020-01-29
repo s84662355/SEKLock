@@ -1,6 +1,6 @@
 <?php
 namespace SEKLock;
-
+use Exception;
 class LockController{
 
     private $tcp_client;
@@ -10,9 +10,14 @@ class LockController{
 
     public function __construct($config)
     { 
-       $this->tcp_client = new  SocketClient($config['ip'], $config['port'], SOL_TCP,5);
+       $this->tcp_client = new  SocketClient($config['ip'], $config['port'], SOL_TCP,3);
        $this->config = $config;
        $this->tcp_client->connect() ;
+
+       if(!$this->tcp_client->receiveMessage()){
+                $this->tcp_client->close();
+                throw new Exception("连接过多", 1);
+       }
        
     }
 

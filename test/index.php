@@ -3,7 +3,7 @@ require_once  dirname(__DIR__ ). '/vendor/autoload.php';
 use  SEKLock\LockController;
  
 $lock = new LockController([
-	     'ip' => '192.168.1.110'  ,
+	     'ip' => '127.0.0.1'  ,
      'port' =>   90 ,
      'secretkey' => 111111  ,
 	]);
