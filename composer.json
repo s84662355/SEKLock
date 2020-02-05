@@ -1,6 +1,6 @@
 {
     "name": "chenjiahao/seklock",
-    "description": "lock",
+    "description": "分布式锁lock",
     "license": "MIT",
     "authors": [
         {
